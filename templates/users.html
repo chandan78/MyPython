@@ -1,0 +1,15 @@
+<head><title>List of users - Python Flask MySQL CRUD</title></head>
+<body>   
+<p><a href="{{ url_for('.add_user_view') }}"> Add User </a></p>
+<p>user data</p>
+<table>
+{% for det in names %}
+
+<tr><td>{{det['user_name']}}</td><td>{{det['user_email']}}</td></tr>
+
+{% endfor %}
+
+</table>
+  
+</body>    
+ 
